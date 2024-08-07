@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+header, footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: pink;
+    color: white;
+}
+
+h1 {
+    color:white
+}
+
+h1,h2 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: gray;
+    padding: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 新着素材　*/
+.new {
+    margin: 20px 0;
+}
+
+.new-list ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* グリッドレイアウト */
+    gap: 20px; /* カード間の余白 */
+    list-style: none;
+    padding: 0;
+}
+
+.new-list ul li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.new-list ul li:hover {
+    transform: scale(1.05); 
+}
+
+.new-list ul li img {
+    max-width: 100%;
+    max-height: 190px; 
+    object-fit: cover; 
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.new-list ul li p {
+    margin-top: 10px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* "もっと見る" ボタン */
+.see-more h1 {
+    font-size: 18px;
+    color: gray;
+    border: 3px solid lightgray;
+    width: 350px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+/* 検索欄 */
+#form1 {
+    position: relative;
+    margin: 0 auto;
+    max-width: 630px;
+    margin-bottom: 15px;
+}
+
+#sbox {
+    border-radius: 8px;
+    border: 3px solid lightgray;
+    width: 500px;
+    height: 45px;
+    outline: 0;
+}
+
+#sbtn {
+    width: 100px;
+    height: 45px;
+}
+
+#sbtn:hover {
+    color: #666;
+}
+
+.dorm {
+    text-align: center;
+    margin-top: 20px; 
+    margin-bottom: 35px;
+}
+
+/* カテゴリー */
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.categories li {
+    flex: 1;
+    min-width: 180px;
+    max-width: 200px;
+    margin: 10px;
+    border: 3px solid lightgray;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    transition: transform 0.2s;
+}
+
+.categories li:hover {
+    transform: scale(1.05);
+}
+
+/* タグ */
+.tag h1 {
+    font-size: 18px;
+    color: gray;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.tag-list ul {
+    column-width: 120px;
+    column-gap: 20px;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.tag-list ul li {
+    margin-bottom: 10px;
+}
+
+.tag-list ul li h {
+    display: inline-block;
+    padding: 5px 10px;
+    color:gray;
+}
+
+.tag-list ul li h:hover {
+    border: 2px solid lightgray;
+    border-radius: 15px;
+}
+
+/* サイト概要 */
+header nav ul, footer nav ul, main section nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li, footer nav ul li, main section nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a, footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover, footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header h1 {
+    font-size: 50px;
+    padding: 10px;
+}
+
+/* フッター */
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
